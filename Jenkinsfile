@@ -44,7 +44,7 @@ pipeline {
                APP_NAMESPACE = "${RHT_OCP4_DEV_USER}-shopping-cart-stage"
            }
            steps {
-             sh "oc rollout latest dc/${DEPLOYMENT_CONFIG_STAGE} -n ${APP_NAMESPACE}
+             sh "oc rollout latest dc/${DEPLOYMENT_CONFIG_STAGE} -n ${APP_NAMESPACE}"
            }
         }
     }
